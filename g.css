@@ -1,0 +1,69 @@
+h1{
+    text-align: center;
+    font-weight: 3000;
+    font-size: 50PX;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.choices{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.choices img:hover{
+    border: 5px solid blue;
+    border-radius: 50%;
+}
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    margin-top: 150px;
+}
+.button{
+    margin-left: 500px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    /* align-self: center; */
+    /* height: 1000px; */
+}
+button{
+    height: 40px;
+    width: 500px;
+    font-size: 20px;
+
+    font-weight: 0px;
+}
+#win{
+    height: 100px;
+    width: 100px;
+    background-image: url(win.png);
+    visibility: hidden;
+  
+    background-size: cover;
+    margin-top: -500px;
+}
+#loss{
+    height: 100px;
+    width: 100px;
+    background-image: url(loss.png);
+    visibility: hidden;
+  
+    background-size: cover;
+
+}
+#draw{
+    height: 140px;
+    width: 100px;
+    background-image: url(draw.png);
+    visibility: hidden;
+    background-size: cover;
+}
