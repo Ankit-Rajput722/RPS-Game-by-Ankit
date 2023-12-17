@@ -147,11 +147,11 @@ h1{
     font-weight: 1500px;
 }
 .button{
-    align-self:  center;
+/*     align-self:  center; */
      
      padding: 0.5rem;
      /* width: 400px; */
-     margin-left: 10%;
+/*      margin-left: 10%; */
 }
 #win{
     height: -1000px;
