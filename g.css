@@ -93,20 +93,20 @@ border-radius: 5px;
 
 }
 #draw{
-    height: 100px;
-    width: 150px;
+    height: 100 px;
+    width: 150 px;
     background-image: url(draw.png);
     visibility: hidden;
     background-size: cover;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:768 px) {
     .images {
         /* background-color: aqua; */
         display:flex;
         flex-direction: column;
         /* justify-content: center; */
         align-items: center;
-        width: 100% !important;  
+        width: 100 % !important;  
         height: 450px;
         margin-top: 95px;
         /* margin-left: 50px; */}
@@ -147,11 +147,11 @@ h1{
     font-weight: 1500px;
 }
 .button{
-    /* align-self:  center;
-     */
+    align-self:  center;
+     
      padding: 0.5rem;
      /* width: 400px; */
-     margin-left: -10%;
+     margin-left: 10%;
 }
 #win{
     height: -1000px;
