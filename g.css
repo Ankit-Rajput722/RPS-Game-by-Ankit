@@ -3,7 +3,7 @@ body{
     padding: 10px;
     height: 120vh;
     box-sizing: border-box;
-    border: 10px solid rgb(43, 226, 116);
+/*     border: 10px solid rgb(43, 226, 116); */
 
 /***** Slide Left *****/
 
@@ -99,7 +99,7 @@ border-radius: 5px;
     visibility: hidden;
     background-size: cover;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
     .images {
         /* background-color: aqua; */
         display:flex;
