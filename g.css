@@ -138,7 +138,9 @@ border-radius: 5px;
     justify-content: space-evenly;
     padding: 1rem;
  }
-
+.users{
+    margin-left: 100px;
+}
 
 h1{
     font-size: 22px;
