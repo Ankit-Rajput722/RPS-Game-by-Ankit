@@ -1,3 +1,17 @@
+body{
+      animation: 2s slide-left ease-out;
+  }
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 0%;
+    }
+}
+
+
+
 h1{
     text-align: center;
     font-weight: 3000;
