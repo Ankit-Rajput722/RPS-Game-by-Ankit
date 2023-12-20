@@ -1,5 +1,7 @@
 body{
-      animation: 2s slide-left ease-out;
+    padding: 0px;
+
+    animation: 2s slide-left ease-out;
   }
   @keyframes slide-left {
     from {
@@ -8,24 +10,38 @@ body{
     to {
       margin-left: 0%;
     }
+  } 
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    border: 5px solid black;
+    height: 100vh;
 }
+.box-container{
+margin: 0 auto;
+max-width: 800px;
+height: 100%;
+background-color: aqua;
+border: 2px solid black;
+align-self: center;
 
-
+}
 
 h1{
     text-align: center;
     font-weight: 3000;
     font-size: 50PX;
+    color:crimson;
+    font-style: italic;
+    
 }
 .images{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
     justify-content: space-evenly;
-    margin-top: 100px;
-}
-.choices{
-    height: 100px;
-    width: 100px;
 }
 
 
@@ -39,66 +55,61 @@ h1{
     align-items: center;
     justify-content: center;
     gap: 250px;
-    margin-top: 150px;
+}
+.users{
+    color: green;
+}
+.comp{
+    color: red;
 }
 .button{
-    margin-left: 500px;
-    display: inline-block;
-    margin-top: 50px;
-    margin-bottom: 80px;
-    align-self: center;
-    /* height: 1000px; */
+    margin: 0 auto;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
 }
 button{
-    height: 40px;
     width: 500px;
     font-size: 20px;
-
+border: 5px solid darkgrey;
+border-radius: 5px;
     font-weight: 0px;
 }
+.result{
+
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 160px;
+
+}
 #win{
-    height: 100px;
-    width: 100px;
-    background-image: url(win.png);
     visibility: hidden;
-  
-    background-size: cover;
-    margin-top: -700px;
 }
 #loss{
-    height: 100px;
-    width: 100px;
-    background-image: url(loss.png);
     visibility: hidden;
   
-    background-size: cover;
 
 }
 #draw{
-    height: 100px;
-    width: 150px;
-    background-image: url(draw.png);
     visibility: hidden;
-    background-size: cover;
-}
-@media screen and (max-width:480px) {
+    
+} 
+@media screen and (max-width:768px) {
     .images {
-        /* background-color: aqua; */
+        
         display:flex;
-        flex-direction: column;
-        /* justify-content: center; */
+        
         align-items: center;
         width: 100% !important;  
-        height: 450px;
-        margin-top: 95px;
-        /* margin-left: 50px; */}
+        height: 230px;
+        margin-top: 20px;
+        }
 
 
-         .choices {
-            height: 600px;
-    margin-left: 50px;
-    /* margin-top: -50px; */
-          }
           .rock{
     margin-top: -85px;
     height: 150px;
@@ -117,17 +128,23 @@ button{
  }
  .score{
     margin-top: -100px;
+    justify-content: space-evenly;
+    padding: 1rem;
  }
 
-
+.users{
+    margin-left: 100px;
+}
 h1{
-    font-size: 20px;
-    font-weight: 1000px;
+    font-size: 30px;
+    font-weight: 1500px;
 }
 .button{
-    /* align-self:  center;
-     */
-     margin-left: 0%;
+    align-self:  center;
+     
+     padding: 0.5rem;
+     
+     margin-left: -10%;
 }
 #win{
     height: -1000px;
