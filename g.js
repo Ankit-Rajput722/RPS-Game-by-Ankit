@@ -7,8 +7,8 @@ win=document.querySelector("#win");
 draw=document.querySelector("#draw");
 loss=document.querySelector("#loss");
 
-userscoreh=document.querySelector(".users>h2");
-compscoreh=document.querySelector(".comp>h2");
+userscoreh=document.querySelector(".users>h1");
+compscoreh=document.querySelector(".comp>h1");
 
 let compChoice;
 function compturn(){
