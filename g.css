@@ -20,14 +20,29 @@ height: 100vh;
 .box-container{
     font-style: italic;
     display: flex;
+    flex-direction: column;
+    line-height: 0rem;
     align-items: center;
     justify-content: center;
     /* border: 10px solid black; */
     width: 100%;
 }
+.box-container h2{
+    font-weight: 1.5rem;
+    color: brown;
+}
+#me{
+    display: none;
+}
+#you{
+    display: none;
+}
+.winner{
+    display: none;
+}
 .images{
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     /* border: 1px solid black; */
     display: flex;
     gap: 1rem;
@@ -38,6 +53,7 @@ height: 100vh;
     border-radius: 40px;
 }
 .score{
+    margin-top: -1rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -86,6 +102,9 @@ button{
     padding: 1rem;
     border: 2px solid black;
 
+}
+#me{
+    margin-left: -2.8rem;
 }
 .images{
     margin-top: 3rem;
