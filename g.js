@@ -1,12 +1,15 @@
-// // console.log("ankit");
 let userwin=0;
 let compwin=0;
+let turn;
 
 msg=document.querySelector("#msg");
 win=document.querySelector("#win");
 draw=document.querySelector("#draw");
 loss=document.querySelector("#loss");
-
+winner=document.querySelector(".winner");
+images=document.querySelector(".images");
+me=document.querySelector("#me");
+you=document.querySelector("#you");
 userscoreh=document.querySelector(".users>h1");
 compscoreh=document.querySelector(".comp>h1");
 
@@ -29,7 +32,7 @@ function playgame(userChoice){
                 draw.style.visibility="visible";
                 loss.style.visibility="hidden";
                 win.style.visibility="hidden";
-
+                console.log("turns  "+turn);
     }
     else if (compChoice==2 && userChoice==0 || compChoice==0 && userChoice==1 || compChoice==1 && userChoice==2) {
                 console.log("user win");
@@ -42,6 +45,7 @@ function playgame(userChoice){
                 win.style.visibility="visible";
                 draw.style.visibility="hidden";
                 loss.style.visibility="hidden";
+                console.log("turns  "+turn);
             }
             else{
                 console.log("computer win");
@@ -53,46 +57,37 @@ function playgame(userChoice){
                     loss.style.visibility="visible";
 draw.style.visibility="hidden";
 win.style.visibility="hidden";
+console.log("turns  " + turn);
             }
 }
+
+
 choices=document.querySelectorAll(".choices")
-choices.forEach((choice) => {
+function play(){
+  choices.forEach((choice) => {
     choice.addEventListener("click", () => {
       const userChoice = choice.getAttribute("id");
+   
+turn++;
       compturn();
       playgame(userChoice);
     console.log("user choose  "+userChoice);
     console.log("comp choose  "+compChoice);
-    });
+   
+    if(userwin==10){
+      winner.style.display="block";
+      me.style.display="block";
+      
+      images.style.display="none";
+      }
+      if(compwin==10) {
+        winner.style.display="block";
+        you.style.display="block";
+        
+        images.style.display="none";
+      
+      }
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+})
+}
+play();
