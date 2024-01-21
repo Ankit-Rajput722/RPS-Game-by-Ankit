@@ -103,8 +103,16 @@ button{
     border: 2px solid black;
 
 }
-#me{
-    margin-left: -2.8rem;
+
+ #me{
+    display: none;
+  margin-left: -2.8rem;
+}
+#you{
+    display: none;
+}
+.winner{
+    display: none;
 }
 .images{
     margin-top: 3rem;
